@@ -11,7 +11,7 @@
 
 ## Overview
 
-This is a simple landing I did to practice my html / css skills.
+This is a simple landing I did to practice my HTML / CSS skills.
 
 An open source mockup was used, which only had two resolution options, so I had to make sure the page transitions smoothly between the breakpoints and looks good on all screens.
 
