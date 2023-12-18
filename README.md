@@ -26,10 +26,10 @@ Users should be able to:
 
 ### Screenshot
 
-- [1440p breakpoint (pixel perfect / mockup provided)](./screenshot-1440.png)
-- [992p breakpoint (breaching the gap / no mockup provided)](./screenshot-992.png)
-- [768p breakpoint (breaching the gap / no mockup provided)](./screenshot-768.png)
-- [375p breakpoint (pixel perfect / mockup provided)](./screenshot-375.png)
+- [1440px breakpoint (pixel perfect / mockup provided)](./screenshot-1440.png)
+- [992px breakpoint (breaching the gap / no mockup provided)](./screenshot-992.png)
+- [768px breakpoint (breaching the gap / no mockup provided)](./screenshot-768.png)
+- [375px breakpoint (pixel perfect / mockup provided)](./screenshot-375.png)
 
 ### Links
 
