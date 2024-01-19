@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <title>Clipboard landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <title>Clipboard</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" fetchpriority="high" as="image" href="img/header/bg-header-desktop.webp" type="image/webp">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <a class="logo header__logo" href="#" data-aos="zoom-out"><img class="logo__img" src="img/header/logo.svg" alt="Clipboard logo"></a>
+      <a class="logo header__logo" href="#" data-aos="zoom-out">
+        <img class="logo__img" src="img/header/logo.svg" alt="Clipboard logo" width="125" height="125">
+      </a>
       <div class="header__inner" data-aos="fade-down">
         <h1 class="header__title">A history of everything you copy</h1>
-        <p class="header__description">Clipboard allows you to&nbsp;track and organize everything you copy. Instantly access your clipboard on&nbsp;all your devices.</p>
+        <p class="header__description">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
       </div>
       <div class="buttons" data-aos="zoom-in-up">
-        <a href="#" class="buttons__btn buttons__btn--ios">Download for iOS</a>
-        <a href="#" class="buttons__btn buttons__btn--mac">Download for Mac</a>
+        <a class="buttons__btn buttons__btn--ios" href="#">Download for iOS</a>
+        <a class="buttons__btn buttons__btn--mac" href="#">Download for Mac</a>
       </div>
     </div>
   </header>
@@ -26,17 +29,20 @@
     <section class="features">
       <div class="container">
         <div class="section-top features__section-top">
-          <h2 class="section-top__title">Keep track of&nbsp;your snippets</h2>
-          <p class="section-top__description">Clipboard instantly stores any item you copy in&nbsp;the cloud, meaning you can access your snippets immediately on&nbsp;all your devices. Our Mac and iOS apps will help you organize everything.</p>
+          <h2 class="section-top__title">Keep track of your snippets</h2>
+          <p class="section-top__description">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
         </div>
       </div>
       <div class="features__content">
-        <img class="features__img-normal" src="img/features/image-computer.png" alt="Computer monitor showing a success modal window" data-aos="fade-up">
+        <picture class="features__img-normal" data-aos="fade-up">
+          <source srcset="img/features/image-computer-mobile.webp" media="(max-width: 576px)">
+          <img src="img/features/image-computer.webp" alt="Computer monitor showing a success modal window" width="750" height="572">
+        </picture>
         <div class="features__img-cropped" data-aos="fade-up-right"></div>
         <ul class="features__list" data-aos="fade-left">
           <li class="features__item">
             <h3 class="subtitle features__subtitle">Quick Search</h3>
-            <p class="description">Easily search your snippets by&nbsp;content, category, web address, application, and more.</p>
+            <p class="description">Easily search your snippets by content, category, web address, application, and more.</p>
           </li>
           <li class="features__item">
             <h3 class="subtitle features__subtitle">iCloud Sync</h3>
@@ -53,56 +59,76 @@
       <div class="container">
         <div class="section-top access__section-top" data-aos="fade-up">
           <h2 class="section-top__title">Access Clipboard anywhere</h2>
-          <p class="section-top__description">Whether you&rsquo;re on&nbsp;the&nbsp;go, or&nbsp;at&nbsp;your computer, you can access all your Clipboard snippets in&nbsp;a&nbsp;few simple clicks.</p>
+          <p class="section-top__description">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
         </div>
       </div>
-      <img class="access__img" src="img/access/image-devices.png" alt="Mobile devices with success modal windows on screens" data-aos="zoom-in-down">
+      <picture class="access__img" data-aos="zoom-in-down">
+        <source srcset="img/access/image-devices-mobile.webp" media="(max-width: 576px)">
+        <img src="img/access/image-devices.webp" alt="Mobile devices with success modal windows on screens" width="905" height="575">
+      </picture>
     </section>
     <section class="tools">
       <div class="container">
         <div class="section-top tools__section-top">
           <h2 class="section-top__title tools__section-top__title">Supercharge your workflow</h2>
-          <p class="section-top__description">We&rsquo;ve got the tools to&nbsp;boost your productivity.</p>
+          <p class="section-top__description">We’ve got the tools to boost your productivity.</p>
         </div>
         <ul class="tools__list">
           <li class="tools__item" data-aos="flip-up">
-            <div class="tools__icon-box"><img class="tools__icon" src="img/tools/icon-blacklist.svg" alt="Blacklist icon"></div>
+            <div class="tools__icon-box">
+              <img class="tools__icon" src="img/tools/icon-blacklist.svg" alt="Blacklist icon" width="44" height="40">
+            </div>
             <h3 class="subtitle tools__subtitle">Create blacklists</h3>
-            <p class="description">Ensure sensitive information never makes its way to&nbsp;your clipboard by&nbsp;excluding certain sources.</p>
+            <p class="description">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
           </li>
           <li class="tools__item" data-aos="flip-up">
-            <div class="tools__icon-box"><img class="tools__icon" src="img/tools/icon-text.svg" alt="Text icon"></div>
+            <div class="tools__icon-box">
+              <img class="tools__icon" src="img/tools/icon-text.svg" alt="Text icon" width="36" height="32">
+            </div>
             <h3 class="subtitle tools__subtitle">Plain text snippets</h3>
-            <p class="description">Remove unwanted formatting from copied text for a&nbsp;consistent look.</p>
+            <p class="description">Remove unwanted formatting from copied text for a consistent look.</p>
           </li>
           <li class="tools__item" data-aos="flip-up">
-            <div class="tools__icon-box"><img class="tools__icon" src="img/tools/icon-preview.svg" alt="Preview icon"></div>
+            <div class="tools__icon-box">
+              <img class="tools__icon" src="img/tools/icon-preview.svg" alt="Preview icon" width="50" height="32">
+            </div>
             <h3 class="subtitle tools__subtitle">Sneak preview</h3>
-            <p class="description">Quick preview of&nbsp;all snippets on&nbsp;your Clipboard for easy access.</p>
+            <p class="description">Quick preview of all snippets on your Clipboard for easy access.</p>
           </li>
         </ul>
       </div>
     </section>
     <section class="partners">
       <div class="container">
+        <h2 class="partners__title visually-hidden">Partners</h2>
         <ul class="partners__list" data-aos="zoom-out">
-          <li class="partners__item"><img class="partners-img" src="img/partners/logo-google.png" alt="Google logo"></li>
-          <li class="partners__item"><img class="partners-img" src="img/partners/logo-ibm.png" alt="IBM logo"></li>
-          <li class="partners__item"><img class="partners-img" src="img/partners/logo-microsoft.png" alt="Microsoft logo"></li>
-          <li class="partners__item"><img class="partners-img" src="img/partners/logo-hp.png" alt="HP logo"></li>
-          <li class="partners__item"><img class="partners-img" src="img/partners/logo-vector-graphics.png" alt="Vector Graphics logo"></li>
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-google.png" alt="Google logo" width="165" height="49">
+          </li>
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-ibm.png" alt="IBM logo" width="139" height="51">
+          </li>
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-microsoft.png" alt="Microsoft logo" width="161" height="35">
+          </li>
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-hp.png" alt="HP logo" width="135" height="56">
+          </li>
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-vector-graphics.png" alt="Vector Graphics logo" width="125" height="30">
+          </li>
         </ul>
       </div>
     </section>
     <section class="app-download">
       <div class="container">
         <div class="section-top app-download__section-top">
-          <h2 class="section-top__title">Clipboard for iOS and Mac&nbsp;OS</h2>
-          <p class="section-top__description">Available for free on&nbsp;the App Store. Download for Mac or&nbsp;iOS, sync with iCloud and you&rsquo;re ready to&nbsp;start adding to your clipboard.</p>
+          <h2 class="section-top__title">Clipboard for iOS and Mac OS</h2>
+          <p class="section-top__description">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
         </div>
         <div class="buttons" data-aos="zoom-in-up">
-          <a href="#" class="buttons__btn buttons__btn--ios">Download for iOS</a>
-          <a href="#" class="buttons__btn buttons__btn--mac">Download for Mac</a>
+          <a class="buttons__btn buttons__btn--ios" href="#">Download for iOS</a>
+          <a class="buttons__btn buttons__btn--mac" href="#">Download for Mac</a>
         </div>
       </div>
     </section>
@@ -110,25 +136,57 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <a class="logo footer__logo" href="#"><img class="logo__img" src="img/header/logo.svg" alt="Clipboard logo"></a>
+        <a class="logo footer__logo" href="#">
+          <img class="logo__img" src="img/header/logo.svg" alt="Clipboard logo" width="55" height="55">
+        </a>
         <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href="#">FAQs</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Install Guide</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
-          <li class="footer__item"><a class="footer__link" href="#">Press Kit</a></li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">FAQs</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Install Guide</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Contact Us</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Press Kit</a>
+          </li>
         </ul>
         <ul class="footer__social">
-          <li class="footer__social-item"><a class="footer__social-link footer__social-link--facebook" href="#" target="_blank" aria-label="Link to Facebook"></a></li>
-          <li class="footer__social-item"><a class="footer__social-link footer__social-link--twitter" href="#" target="_blank" aria-label="Link to Twitter"></a></li>
-          <li class="footer__social-item"><a class="footer__social-link footer__social-link--instagram" href="#" target="_blank" aria-label="Link to Instagram"></a></li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--facebook" href="#" target="_blank" aria-label="Link to Facebook"></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--twitter" href="#" target="_blank" aria-label="Link to Twitter"></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--instagram" href="#" target="_blank" aria-label="Link to Instagram"></a>
+          </li>
         </ul>
       </div>
     </div>
   </footer>
+  <script>
+    const featuresImgNormal = document.querySelector('.features__img-normal');
+    const featuresImgCropped = document.querySelector('.features__img-cropped');
+    if (window.innerWidth > 768 && window.innerWidth < 1441) {
+      featuresImgNormal.setAttribute('aria-hidden', 'true');
+      featuresImgCropped.setAttribute('aria-hidden', 'false');
+    } else {
+      featuresImgNormal.setAttribute('aria-hidden', 'false');
+      featuresImgCropped.setAttribute('aria-hidden', 'true');
+    }
+  </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ disable: false });
+    AOS.init({
+      disable: false,
+      duration: 600
+    });
   </script>
 </body>
 </html>
