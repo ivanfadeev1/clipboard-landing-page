@@ -5,97 +5,189 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="#">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <title>FAQs</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/reset.css">
+  <title>Clipboard</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" fetchpriority="high" as="image" href="img/header/bg-header-desktop.webp" type="image/webp">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <main class="main">
-    <section class="accordion">
-      <div class="accordion__container">
-        <div class="accordion__wrapper">
-          <h1 class="accordion__title">FAQs</h1>
-
-          <div class="accordion__item">
-            <h2 class="accordion__header-container">
-              <button class="accordion__header"
-                      id="accordion-header-1"
-                      aria-controls="accordion-panel-1"
-                      aria-expanded="false">
-                <span class="accordion__header-text">How do viruses and trojans differ?</span>
-                <span class="accordion__icon" aria-hidden="true"></span>
-              </button>
-            </h2>
-            <div class="accordion__panel"
-                     id="accordion-panel-1"
-                     aria-labelledby="accordion-header-1"
-                     aria-hidden="true">
-              <p class="accordion__panel-text">A virus is a malicious program that can replicate itself and spread to other computers, often causing damage to files and systems. On the other hand, a trojan disguises itself as a legitimate program to trick you into downloading it.</p>
+  <header class="header">
+    <div class="container">
+      <a class="logo header__logo" href="#" data-aos="zoom-out">
+        <img class="logo__img" src="img/header/logo.svg" alt="Clipboard logo" width="125" height="125">
+      </a>
+      <div class="header__inner" data-aos="fade-down">
+        <h1 class="header__title">A history of everything you copy</h1>
+        <p class="header__description">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+      </div>
+      <div class="buttons" data-aos="zoom-in-up">
+        <a class="buttons__btn buttons__btn--ios" href="#">Download for iOS</a>
+        <a class="buttons__btn buttons__btn--mac" href="#">Download for Mac</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="features">
+      <div class="container">
+        <div class="section-top features__section-top">
+          <h2 class="section-top__title">Keep track of your snippets</h2>
+          <p class="section-top__description">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+        </div>
+      </div>
+      <div class="features__content">
+        <picture class="features__img-normal" data-aos="fade-up">
+          <source srcset="img/features/image-computer-mobile.webp" media="(max-width: 576px)">
+          <img src="img/features/image-computer.webp" alt="Computer monitor showing a success modal window" width="750" height="572">
+        </picture>
+        <div class="features__img-cropped" data-aos="fade-up-right"></div>
+        <ul class="features__list" data-aos="fade-left">
+          <li class="features__item">
+            <h3 class="subtitle features__subtitle">Quick Search</h3>
+            <p class="description">Easily search your snippets by content, category, web address, application, and more.</p>
+          </li>
+          <li class="features__item">
+            <h3 class="subtitle features__subtitle">iCloud Sync</h3>
+            <p class="description">Instantly saves and syncs snippets across all your devices.</p>
+          </li>
+          <li class="features__item">
+            <h3 class="subtitle features__subtitle">Complete History</h3>
+            <p class="description">Retrieve any snippets from the first moment you started using the app.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="access">
+      <div class="container">
+        <div class="section-top access__section-top" data-aos="fade-up">
+          <h2 class="section-top__title">Access Clipboard anywhere</h2>
+          <p class="section-top__description">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+        </div>
+      </div>
+      <picture class="access__img" data-aos="zoom-in-down">
+        <source srcset="img/access/image-devices-mobile.webp" media="(max-width: 576px)">
+        <img src="img/access/image-devices.webp" alt="Mobile devices with success modal windows on screens" width="905" height="575">
+      </picture>
+    </section>
+    <section class="tools">
+      <div class="container">
+        <div class="section-top tools__section-top">
+          <h2 class="section-top__title tools__section-top__title">Supercharge your workflow</h2>
+          <p class="section-top__description">We’ve got the tools to boost your productivity.</p>
+        </div>
+        <ul class="tools__list">
+          <li class="tools__item" data-aos="flip-up">
+            <div class="tools__icon-box">
+              <img class="tools__icon" src="img/tools/icon-blacklist.svg" alt="Blacklist icon" width="44" height="40">
             </div>
-          </div>
-
-          <div class="accordion__item">
-            <h2 class="accordion__header-container">
-              <button class="accordion__header"
-                      id="accordion-header-2"
-                      aria-controls="accordion-panel-2"
-                      aria-expanded="false">
-                <span class="accordion__header-text">How do I protect my computer from malware?</span>
-                <span class="accordion__icon" aria-hidden="true"></span>
-              </button>
-            </h2>
-            <div class="accordion__panel"
-                     id="accordion-panel-2"
-                     aria-labelledby="accordion-header-2"
-                     aria-hidden="true">
-              <p class="accordion__panel-text">Protection involves installing and regularly updating antivirus software, being cautious when downloading files or clicking on links, keeping all software up to date, and using strong passwords and two-factor authentication to protect your accounts.</p>
+            <h3 class="subtitle tools__subtitle">Create blacklists</h3>
+            <p class="description">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+          </li>
+          <li class="tools__item" data-aos="flip-up">
+            <div class="tools__icon-box">
+              <img class="tools__icon" src="img/tools/icon-text.svg" alt="Text icon" width="36" height="32">
             </div>
-          </div>
-
-          <div class="accordion__item">
-            <h2 class="accordion__header-container">
-              <button class="accordion__header"
-                      id="accordion-header-3"
-                      aria-controls="accordion-panel-3"
-                      aria-expanded="false">
-                <span class="accordion__header-text">Can I recover deleted files from my computer?</span>
-                <span class="accordion__icon" aria-hidden="true"></span>
-              </button>
-            </h2>
-            <div class="accordion__panel"
-                     id="accordion-panel-3"
-                     aria-labelledby="accordion-header-3"
-                     aria-hidden="true">
-              <p class="accordion__panel-text">It depends on how the files were deleted. If they were simply deleted from the recycle bin, they may be recoverable with file recovery software.</p>
+            <h3 class="subtitle tools__subtitle">Plain text snippets</h3>
+            <p class="description">Remove unwanted formatting from copied text for a consistent look.</p>
+          </li>
+          <li class="tools__item" data-aos="flip-up">
+            <div class="tools__icon-box">
+              <img class="tools__icon" src="img/tools/icon-preview.svg" alt="Preview icon" width="50" height="32">
             </div>
-          </div>
-
-          <div class="accordion__item">
-            <h2 class="accordion__header-container">
-              <button class="accordion__header"
-                      id="accordion-header-4"
-                      aria-controls="accordion-panel-4"
-                      aria-expanded="false">
-                <span class="accordion__header-text">What is phishing and how can I avoid it?</span>
-                <span class="accordion__icon" aria-hidden="true"></span>
-              </button>
-            </h2>
-            <div class="accordion__panel"
-                     id="accordion-panel-4"
-                     aria-labelledby="accordion-header-4"
-                     aria-hidden="true">
-              <p class="accordion__panel-text">Phishing is a scam where attackers try to trick you into giving them sensitive information. To avoid it, double-check sender's email address, look for errors in the message, never click on unknown links or download attachments, and use strong passwords and two-factor authentication.</p>
-            </div>
-          </div>
-
+            <h3 class="subtitle tools__subtitle">Sneak preview</h3>
+            <p class="description">Quick preview of all snippets on your Clipboard for easy access.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners__title visually-hidden">Partners</h2>
+        <ul class="partners__list" data-aos="zoom-out">
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-google.png" alt="Google logo" width="165" height="49">
+          </li>
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-ibm.png" alt="IBM logo" width="139" height="51">
+          </li>
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-microsoft.png" alt="Microsoft logo" width="161" height="35">
+          </li>
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-hp.png" alt="HP logo" width="135" height="56">
+          </li>
+          <li class="partners__item">
+            <img class="partners-img" src="img/partners/logo-vector-graphics.png" alt="Vector Graphics logo" width="125" height="30">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="app-download">
+      <div class="container">
+        <div class="section-top app-download__section-top">
+          <h2 class="section-top__title">Clipboard for iOS and Mac OS</h2>
+          <p class="section-top__description">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+        </div>
+        <div class="buttons" data-aos="zoom-in-up">
+          <a class="buttons__btn buttons__btn--ios" href="#">Download for iOS</a>
+          <a class="buttons__btn buttons__btn--mac" href="#">Download for Mac</a>
         </div>
       </div>
     </section>
   </main>
-  <script src="js/main.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a class="logo footer__logo" href="#">
+          <img class="logo__img" src="img/header/logo.svg" alt="Clipboard logo" width="55" height="55">
+        </a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">FAQs</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Install Guide</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Contact Us</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Press Kit</a>
+          </li>
+        </ul>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--facebook" href="#" target="_blank" aria-label="Link to Facebook"></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--twitter" href="#" target="_blank" aria-label="Link to Twitter"></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--instagram" href="#" target="_blank" aria-label="Link to Instagram"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const featuresImgNormal = document.querySelector('.features__img-normal');
+    const featuresImgCropped = document.querySelector('.features__img-cropped');
+    if (window.innerWidth > 768 && window.innerWidth < 1441) {
+      featuresImgNormal.setAttribute('aria-hidden', 'true');
+      featuresImgCropped.setAttribute('aria-hidden', 'false');
+    } else {
+      featuresImgNormal.setAttribute('aria-hidden', 'false');
+      featuresImgCropped.setAttribute('aria-hidden', 'true');
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      disable: false,
+      duration: 600
+    });
+  </script>
 </body>
 </html>
